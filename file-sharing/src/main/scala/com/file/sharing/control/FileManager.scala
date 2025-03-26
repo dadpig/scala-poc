@@ -19,7 +19,7 @@ class FileManager {
     val dir = FileSystems.getDefault.getPath(baseDir+directory)
     if (Files.list(dir).count().>(0)) {
       //Files.list(dir).iterator().asScala.foreach(println)
-      Files.list(dir).forEach(i =>list.add(i))
+      //Files.list(dir).forEach(i =>list.add(i))
 
     }else {list.add(f"No files available at $baseDir...")}
 
