@@ -1,10 +1,8 @@
 package com.file.sharing.control
 
-import java.nio.file.{FileSystems, Files}
-import scala.io.Source
+import java.nio.file.{FileSystems, Files, Path}
+import java.util
 import scala.jdk.javaapi.CollectionConverters
-
-
 import scala.jdk.CollectionConverters.*
 
 
@@ -14,15 +12,24 @@ class FileManager {
 
   val baseDir = "src/main/resources/"
 
-  def listFilesFromDir(directory: String): Seq[String] = {
-    val list = new java.util.ArrayList[String]()
+  def listFilesFromDir(directory: String): util.ArrayList[String] = {
+
+    var list = util.ArrayList[String]()
+
     val dir = FileSystems.getDefault.getPath(baseDir+directory)
     if (Files.list(dir).count().>(0)) {
       //Files.list(dir).iterator().asScala.foreach(println)
-      Files.list(dir).forEach(i =>list.add(i))
 
-    }else {list.add(f"No files available at $baseDir...")}
+      var it = Files.list(dir).iterator().asScala
+      while it.hasNext do
+           list.add(it.next().toString)
 
-    return CollectionConverters.asScala(list).toSeq
+
+
+    }else {
+      list.add(f"No files available at $baseDir...")
+    }
+
+    list
   }
 }
