@@ -34,15 +34,15 @@ class FileManager {
     fileWasCreated
   }
 
-  def createDir(dirName: String)   = {
-    var ret = false
-
+  def createDir(dirName: String)  Boolean = {
+    var dirWasCreated = false
     /*if (Files.exists(FileSystems.getDefault.getPath(baseDir+dirName))) {
       println("Directory already exists")
     }*/
     val dirPath = FileSystems.getDefault.getPath(baseDir+dirName)
     Files.createDirectory(dirPath)
-    ret = true
+    dirWasCreated = true
+    dirWasCreated
   }
 
   def readFile(fileName: String) = {
