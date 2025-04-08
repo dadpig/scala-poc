@@ -3,27 +3,20 @@ package note.taking.system.service
 import note.taking.system.domain.Note
 class NoteManager(){
 
-  private val notes: List[Note] = List()
+  private var notes: List[Note] = List()
 
-  def editNote(noteName:String, content: String) = Boolen{
-    var fileEdited = false;
-    val note = notes.find(_.getName == noteName)
-    if (note.isDefined) {
-      note.+(content)
-      fileEdited = true
-    }
-    fileEdited
-  }
-  def addNote(note: Note): Unit = {
-    // Logic to add a note
+
+  def addNote(noteName: String, content:String): Unit = {
+    notes = notes :+ new Note(noteName, content, java.time.LocalDateTime.now())
   }
 
-  def deleteNote(noteId: String): Unit = {
-    // Logic to delete a note
+  def deleteNote(noteName: String): List[Note]  = {
+    notes = notes.filterNot(_.getName == noteName)
+    return notes
   }
 
-  def getNotes: List[String] = {
-    // Logic to get all notes
-    notes
+  def getNotes(name: String): List[Note] = {
+    if(name.isEmpty) return notes
+    notes.filter(_.getName.contains(name))
   }
 }
