@@ -1,3 +1,5 @@
+import mosquito.game.domain.Game
+
 @main
 def main(): Unit =
   println("Hello world!")
@@ -19,5 +21,9 @@ The game should have a method that can return the number of mosquitos killed.
 The game should have a method that can return the number of mosquitos alive.
 The mosquito can walk in any direction (up, down, left, right, diagonals).
 The exterminator can walk in one direction, it should swap the metrixs.
-The exterminator can walk from the bottown left corner to the top right corner them from the botton to the top them return on the same route.
+The exterminator can walk from the bottown left corner to the top right corner them from the botton
+to the top them return on the same route.
 */
+
+
+new Game.start()
