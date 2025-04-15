@@ -26,4 +26,7 @@ to the top them return on the same route.
 */
 
 
-new Game.start()
+//start game
+  val game = Game
+  game.start()
+  println("Game started")
