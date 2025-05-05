@@ -1,0 +1,5 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(libraryDependencies, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: libraryDependencies[0m
+[0m[[0m[0minfo[0m] [0m[0m* org.scala-lang:scala3-library:3.3.4[0m
+[0m[[0m[0minfo[0m] [0m[0m* org.scalatest:scalatest:3.2.19:test[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

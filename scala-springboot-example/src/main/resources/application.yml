@@ -1,0 +1,23 @@
+application:
+  name: "scala-springboot-example"
+  description: "An example Spring Boot app using Scala"
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    metrics:
+      enabled: true
+    health:
+      enabled: true
+      show-details: always
+
+logging:
+  file:
+    name: logs/scala-springboot-example.log

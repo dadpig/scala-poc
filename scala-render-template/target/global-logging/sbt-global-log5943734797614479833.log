@@ -1,0 +1,125 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(;project ; init, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(project, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mroot (in build file:/Users/tlopesdeoliveira/GitProjects/pocs/scala-render-template/)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(init, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mAttempting to fetch org.scala-sbt.sbt-giter8-resolver % sbt-giter8-resolver_2.12 % 0.17.0. This operation may fail.[0m
+[0m[[0m[0mdebug[0m] [0m[0m:: resolving dependencies :: org.scala-sbt.temp#temp-module-926c08c6fcee167b243e4fa4851a85997a4f15bc;0.17.0[0m
+[0m[[0m[0mdebug[0m] [0m[0m	confs: [compile, runtime, test, provided, optional][0m
+[0m[[0m[0mdebug[0m] [0m[0m	validate = true[0m
+[0m[[0m[0mdebug[0m] [0m[0m	refresh = false[0m
+[0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'compile'[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for org.scala-sbt.temp#temp-module-926c08c6fcee167b243e4fa4851a85997a4f15bc;0.17.0 [compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-sbt.temp#temp-module-926c08c6fcee167b243e4fa4851a85997a4f15bc;0.17.0->org.scala-sbt.sbt-giter8-resolver#sbt-giter8-resolver_2.12;0.17.0 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: org.scala-sbt.sbt-giter8-resolver#sbt-giter8-resolver_2.12;0.17.0 {compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0msbt-chain-delegate: Checking cache for: dependency: org.scala-sbt.sbt-giter8-resolver#sbt-giter8-resolver_2.12;0.17.0 {compile=[default(compile)]}[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried /Users/tlopesdeoliveira/.ivy2/local/org.scala-sbt.sbt-giter8-resolver/sbt-giter8-resolver_2.12/0.17.0/ivys/ivy.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	local: no ivy file found for org.scala-sbt.sbt-giter8-resolver#sbt-giter8-resolver_2.12;0.17.0[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo1.maven.org/maven2/org/scala-sbt/sbt-giter8-resolver/sbt-giter8-resolver_2.12/0.17.0/sbt-giter8-resolver_2.12-0.17.0.pom[0m
+[0m[[0m[31merror[0m] [0m[0mServer access Error: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target url=https://repo1.maven.org/maven2/org/scala-sbt/sbt-giter8-resolver/sbt-giter8-resolver_2.12/0.17.0/sbt-giter8-resolver_2.12-0.17.0.pom[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public: no ivy file found for org.scala-sbt.sbt-giter8-resolver#sbt-giter8-resolver_2.12;0.17.0[0m
+[0m[[0m[0mdebug[0m] [0m[0m		tried https://repo.artima.com/releases/org/scala-sbt/sbt-giter8-resolver/sbt-giter8-resolver_2.12/0.17.0/sbt-giter8-resolver_2.12-0.17.0.pom[0m
+[0m[[0m[31merror[0m] [0m[0mServer access Error: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target url=https://repo.artima.com/releases/org/scala-sbt/sbt-giter8-resolver/sbt-giter8-resolver_2.12/0.17.0/sbt-giter8-resolver_2.12-0.17.0.pom[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Artima Maven Repository: no ivy file found for org.scala-sbt.sbt-giter8-resolver#sbt-giter8-resolver_2.12;0.17.0[0m
+[0m[[0m[33mwarn[0m] [0m[0m	module not found: org.scala-sbt.sbt-giter8-resolver#sbt-giter8-resolver_2.12;0.17.0[0m
+[0m[[0m[33mwarn[0m] [0m[0m==== local: tried[0m
+[0m[[0m[33mwarn[0m] [0m[0m  /Users/tlopesdeoliveira/.ivy2/local/org.scala-sbt.sbt-giter8-resolver/sbt-giter8-resolver_2.12/0.17.0/ivys/ivy.xml[0m
+[0m[[0m[33mwarn[0m] [0m[0m==== public: tried[0m
+[0m[[0m[33mwarn[0m] [0m[0m  https://repo1.maven.org/maven2/org/scala-sbt/sbt-giter8-resolver/sbt-giter8-resolver_2.12/0.17.0/sbt-giter8-resolver_2.12-0.17.0.pom[0m
+[0m[[0m[33mwarn[0m] [0m[0m==== Artima Maven Repository: tried[0m
+[0m[[0m[33mwarn[0m] [0m[0m  https://repo.artima.com/releases/org/scala-sbt/sbt-giter8-resolver/sbt-giter8-resolver_2.12/0.17.0/sbt-giter8-resolver_2.12-0.17.0.pom[0m
+[0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'runtime'[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for org.scala-sbt.temp#temp-module-926c08c6fcee167b243e4fa4851a85997a4f15bc;0.17.0 [runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for org.scala-sbt.temp#temp-module-926c08c6fcee167b243e4fa4851a85997a4f15bc;0.17.0 [compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-sbt.temp#temp-module-926c08c6fcee167b243e4fa4851a85997a4f15bc;0.17.0->org.scala-sbt.sbt-giter8-resolver#sbt-giter8-resolver_2.12;0.17.0 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'test'[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for org.scala-sbt.temp#temp-module-926c08c6fcee167b243e4fa4851a85997a4f15bc;0.17.0 [test][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for org.scala-sbt.temp#temp-module-926c08c6fcee167b243e4fa4851a85997a4f15bc;0.17.0 [runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for org.scala-sbt.temp#temp-module-926c08c6fcee167b243e4fa4851a85997a4f15bc;0.17.0 [compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-sbt.temp#temp-module-926c08c6fcee167b243e4fa4851a85997a4f15bc;0.17.0->org.scala-sbt.sbt-giter8-resolver#sbt-giter8-resolver_2.12;0.17.0 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'provided'[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for org.scala-sbt.temp#temp-module-926c08c6fcee167b243e4fa4851a85997a4f15bc;0.17.0 [provided][0m
+[0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'optional'[0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for org.scala-sbt.temp#temp-module-926c08c6fcee167b243e4fa4851a85997a4f15bc;0.17.0 [optional][0m
+[0m[[0m[0mdebug[0m] [0m[0mignoring unhandled DependencyDescriptorMediator: class sbt.internal.librarymanagement.IvyScalaUtil$OverrideScalaMediator[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resolved ivy file produced in cache[0m
+[0m[[0m[0mdebug[0m] [0m[0m:: downloading artifacts ::[0m
+[0m[[0m[0mdebug[0m] [0m[0m:: resolution report :: resolve 190ms :: artifacts dl 1ms[0m
+[0m[[0m[33mwarn[0m] [0m[0m	::::::::::::::::::::::::::::::::::::::::::::::[0m
+[0m[[0m[33mwarn[0m] [0m[0m	::          UNRESOLVED DEPENDENCIES         ::[0m
+[0m[[0m[33mwarn[0m] [0m[0m	::::::::::::::::::::::::::::::::::::::::::::::[0m
+[0m[[0m[33mwarn[0m] [0m[0m	:: org.scala-sbt.sbt-giter8-resolver#sbt-giter8-resolver_2.12;0.17.0: not found[0m
+[0m[[0m[33mwarn[0m] [0m[0m	::::::::::::::::::::::::::::::::::::::::::::::[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for org.scala-sbt.temp#temp-module-926c08c6fcee167b243e4fa4851a85997a4f15bc;0.17.0 compile produced in /Users/tlopesdeoliveira/GitProjects/pocs/scala-render-template/target/scala-3.3.4/resolution-cache/reports/org.scala-sbt.temp-temp-module-926c08c6fcee167b243e4fa4851a85997a4f15bc-compile.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for org.scala-sbt.temp#temp-module-926c08c6fcee167b243e4fa4851a85997a4f15bc;0.17.0 runtime produced in /Users/tlopesdeoliveira/GitProjects/pocs/scala-render-template/target/scala-3.3.4/resolution-cache/reports/org.scala-sbt.temp-temp-module-926c08c6fcee167b243e4fa4851a85997a4f15bc-runtime.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for org.scala-sbt.temp#temp-module-926c08c6fcee167b243e4fa4851a85997a4f15bc;0.17.0 test produced in /Users/tlopesdeoliveira/GitProjects/pocs/scala-render-template/target/scala-3.3.4/resolution-cache/reports/org.scala-sbt.temp-temp-module-926c08c6fcee167b243e4fa4851a85997a4f15bc-test.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for org.scala-sbt.temp#temp-module-926c08c6fcee167b243e4fa4851a85997a4f15bc;0.17.0 provided produced in /Users/tlopesdeoliveira/GitProjects/pocs/scala-render-template/target/scala-3.3.4/resolution-cache/reports/org.scala-sbt.temp-temp-module-926c08c6fcee167b243e4fa4851a85997a4f15bc-provided.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for org.scala-sbt.temp#temp-module-926c08c6fcee167b243e4fa4851a85997a4f15bc;0.17.0 optional produced in /Users/tlopesdeoliveira/GitProjects/pocs/scala-render-template/target/scala-3.3.4/resolution-cache/reports/org.scala-sbt.temp-temp-module-926c08c6fcee167b243e4fa4851a85997a4f15bc-optional.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resolve done (190ms resolve - 1ms download)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.RuntimeException: Retrieval of org.scala-sbt.sbt-giter8-resolver:sbt-giter8-resolver:0.17.0 failed.[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.sys.package$.error(package.scala:30)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TemplateCommandUtil$.classpathForInfo(TemplateCommandUtil.scala:161)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TemplateCommandUtil$.infoLoader(TemplateCommandUtil.scala:121)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TemplateCommandUtil$.$anonfun$run$1(TemplateCommandUtil.scala:80)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TemplateCommandUtil$.$anonfun$run$1$adapted(TemplateCommandUtil.scala:79)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.LinearSeqOptimized.find(LinearSeqOptimized.scala:115)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.LinearSeqOptimized.find$(LinearSeqOptimized.scala:112)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.find(List.scala:91)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TemplateCommandUtil$.run(TemplateCommandUtil.scala:79)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TemplateCommandUtil$.runTemplate(TemplateCommandUtil.scala:55)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TemplateCommandUtil$.$anonfun$templateCommand0$2(TemplateCommandUtil.scala:32)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Command$.$anonfun$applyEffect$4(Command.scala:151)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Command$.$anonfun$applyEffect$2(Command.scala:146)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Command$.process(Command.scala:194)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.MainLoop$.$anonfun$processCommand$7(MainLoop.scala:267)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Option.getOrElse(Option.scala:189)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.MainLoop$.process$1(MainLoop.scala:267)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.MainLoop$.processCommand(MainLoop.scala:312)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.MainLoop$.$anonfun$next$5(MainLoop.scala:171)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.State$StateOpsImpl$.runCmd$1(State.scala:290)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.State$StateOpsImpl$.process$extension(State.scala:326)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.MainLoop$.$anonfun$next$4(MainLoop.scala:171)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:24)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.MainLoop$.next(MainLoop.scala:171)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.MainLoop$.run(MainLoop.scala:152)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.MainLoop$.$anonfun$runWithNewLog$1(MainLoop.scala:127)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.io.Using.apply(Using.scala:41)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.MainLoop$.runWithNewLog(MainLoop.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.MainLoop$.runAndClearLast(MainLoop.scala:74)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.MainLoop$.runLoggedLoop(MainLoop.scala:59)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.MainLoop$.runLogged(MainLoop.scala:50)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.StandardMain$.runManaged(Main.scala:225)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.xMain$.$anonfun$run$11(Main.scala:136)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:62)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Console$.withIn(Console.scala:230)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.Terminal$.withIn(Terminal.scala:620)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.Terminal$.$anonfun$withStreams$1(Terminal.scala:400)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:62)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Console$.withOut(Console.scala:167)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.Terminal$.$anonfun$withOut$2(Terminal.scala:610)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:62)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Console$.withErr(Console.scala:196)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.Terminal$.withOut(Terminal.scala:610)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.Terminal$.withStreams(Terminal.scala:400)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.xMain$.withStreams$1(Main.scala:89)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.xMain$.run(Main.scala:124)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Method.invoke(Method.java:498)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.XMainConfiguration.run(XMainConfiguration.java:59)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.xMain.run(Main.scala:48)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Launch$.$anonfun$run$1(Launch.scala:149)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Launch$.withContextLoader(Launch.scala:176)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Launch$.run(Launch.scala:149)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Launch$.$anonfun$apply$1(Launch.scala:44)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Launch$.launch(Launch.scala:159)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Launch$.apply(Launch.scala:44)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Launch$.apply(Launch.scala:21)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Boot$.runImpl(Boot.scala:78)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Boot$.run(Boot.scala:73)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Boot$.main(Boot.scala:21)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.boot.Boot.main(Boot.scala)[0m
+[0m[[0m[31merror[0m] [0m[0mRetrieval of org.scala-sbt.sbt-giter8-resolver:sbt-giter8-resolver:0.17.0 failed.[0m
+[0m[[0m[31merror[0m] [0m[0mUse 'last' for the full log.[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

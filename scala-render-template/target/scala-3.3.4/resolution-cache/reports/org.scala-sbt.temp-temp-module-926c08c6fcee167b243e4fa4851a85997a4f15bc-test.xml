@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="org.scala-sbt.temp"
+		module="temp-module-926c08c6fcee167b243e4fa4851a85997a4f15bc"
+		revision="0.17.0"
+		conf="test"
+		confs="compile, runtime, test, provided, optional"
+		date="20250207055016"/>
+	<dependencies>
+		<module organisation="org.scala-sbt.sbt-giter8-resolver" name="sbt-giter8-resolver_2.12">
+			<revision name="0.17.0" status="release" pubdate="20241213222829" resolver="public" artresolver="public" homepage="https://github.com/sbt/sbt-giter8-resolver" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="2435" time="2047" location="/Users/tlopesdeoliveira/.ivy2/cache/org.scala-sbt.sbt-giter8-resolver/sbt-giter8-resolver_2.12/ivy-0.17.0.xml" searched="true" original-local-location="/Users/tlopesdeoliveira/.ivy2/cache/org.scala-sbt.sbt-giter8-resolver/sbt-giter8-resolver_2.12/ivy-0.17.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/sbt-giter8-resolver/sbt-giter8-resolver_2.12/0.17.0/sbt-giter8-resolver_2.12-0.17.0.pom"/>
+				<caller organisation="org.scala-sbt.temp" name="temp-module-926c08c6fcee167b243e4fa4851a85997a4f15bc" conf="test, compile, runtime" rev="0.17.0" rev-constraint-default="0.17.0" rev-constraint-dynamic="0.17.0" callerrev="0.17.0"/>
+				<artifacts>
+					<artifact name="sbt-giter8-resolver_2.12" type="jar" ext="jar" status="successful" details="" size="4993" time="2713" location="/Users/tlopesdeoliveira/.ivy2/cache/org.scala-sbt.sbt-giter8-resolver/sbt-giter8-resolver_2.12/jars/sbt-giter8-resolver_2.12-0.17.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/sbt-giter8-resolver/sbt-giter8-resolver_2.12/0.17.0/sbt-giter8-resolver_2.12-0.17.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.foundweekends.giter8" name="giter8-launcher_2.12">
+			<revision name="0.17.0" status="release" pubdate="20241213220710" resolver="public" artresolver="public" homepage="https://www.foundweekends.org/giter8/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="2935" time="2086" location="/Users/tlopesdeoliveira/.ivy2/cache/org.foundweekends.giter8/giter8-launcher_2.12/ivy-0.17.0.xml" searched="true" original-local-location="/Users/tlopesdeoliveira/.ivy2/cache/org.foundweekends.giter8/giter8-launcher_2.12/ivy-0.17.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/foundweekends/giter8/giter8-launcher_2.12/0.17.0/giter8-launcher_2.12-0.17.0.pom"/>
+				<caller organisation="org.scala-sbt.sbt-giter8-resolver" name="sbt-giter8-resolver_2.12" conf="default, compile, runtime, master" rev="0.17.0" rev-constraint-default="0.17.0" rev-constraint-dynamic="0.17.0" callerrev="0.17.0"/>
+				<artifacts>
+					<artifact name="giter8-launcher_2.12" type="jar" ext="jar" status="successful" details="" size="10543" time="2352" location="/Users/tlopesdeoliveira/.ivy2/cache/org.foundweekends.giter8/giter8-launcher_2.12/jars/giter8-launcher_2.12-0.17.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/foundweekends/giter8/giter8-launcher_2.12/0.17.0/giter8-launcher_2.12-0.17.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.get-coursier" name="coursier_2.12">
+			<revision name="2.1.13" status="release" pubdate="20240917081052" resolver="public" artresolver="public" homepage="https://github.com/coursier/coursier" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+				<license name="Apache-2.0" url="https://spdx.org/licenses/Apache-2.0.html"/>
+				<metadata-artifact status="successful" details="" size="2955" time="2982" location="/Users/tlopesdeoliveira/.ivy2/cache/io.get-coursier/coursier_2.12/ivy-2.1.13.xml" searched="true" original-local-location="/Users/tlopesdeoliveira/.ivy2/cache/io.get-coursier/coursier_2.12/ivy-2.1.13.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/get-coursier/coursier_2.12/2.1.13/coursier_2.12-2.1.13.pom"/>
+				<caller organisation="org.foundweekends.giter8" name="giter8-launcher_2.12" conf="compile, runtime" rev="2.1.13" rev-constraint-default="2.1.13" rev-constraint-dynamic="2.1.13" callerrev="0.17.0"/>
+				<artifacts>
+					<artifact name="coursier_2.12" type="jar" ext="jar" status="successful" details="" size="1089115" time="4430" location="/Users/tlopesdeoliveira/.ivy2/cache/io.get-coursier/coursier_2.12/jars/coursier_2.12-2.1.13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/get-coursier/coursier_2.12/2.1.13/coursier_2.12-2.1.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.get-coursier" name="coursier-proxy-setup">
+			<revision name="2.1.13" status="release" pubdate="20240917081100" resolver="public" artresolver="public" homepage="https://github.com/coursier/coursier" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="35">
+				<license name="Apache-2.0" url="https://spdx.org/licenses/Apache-2.0.html"/>
+				<metadata-artifact status="successful" details="" size="1340" time="2546" location="/Users/tlopesdeoliveira/.ivy2/cache/io.get-coursier/coursier-proxy-setup/ivy-2.1.13.xml" searched="true" original-local-location="/Users/tlopesdeoliveira/.ivy2/cache/io.get-coursier/coursier-proxy-setup/ivy-2.1.13.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/get-coursier/coursier-proxy-setup/2.1.13/coursier-proxy-setup-2.1.13.pom"/>
+				<caller organisation="io.get-coursier" name="coursier_2.12" conf="compile, runtime" rev="2.1.13" rev-constraint-default="2.1.13" rev-constraint-dynamic="2.1.13" callerrev="2.1.13"/>
+				<artifacts>
+					<artifact name="coursier-proxy-setup" type="jar" ext="jar" status="successful" details="" size="6832" time="1950" location="/Users/tlopesdeoliveira/.ivy2/cache/io.get-coursier/coursier-proxy-setup/jars/coursier-proxy-setup-2.1.13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/get-coursier/coursier-proxy-setup/2.1.13/coursier-proxy-setup-2.1.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.get-coursier" name="coursier-cache_2.12">
+			<revision name="2.1.13" status="release" pubdate="20240917081047" resolver="public" artresolver="public" homepage="https://github.com/coursier/coursier" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="20">
+				<license name="Apache-2.0" url="https://spdx.org/licenses/Apache-2.0.html"/>
+				<metadata-artifact status="successful" details="" size="3546" time="2474" location="/Users/tlopesdeoliveira/.ivy2/cache/io.get-coursier/coursier-cache_2.12/ivy-2.1.13.xml" searched="true" original-local-location="/Users/tlopesdeoliveira/.ivy2/cache/io.get-coursier/coursier-cache_2.12/ivy-2.1.13.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/get-coursier/coursier-cache_2.12/2.1.13/coursier-cache_2.12-2.1.13.pom"/>
+				<caller organisation="io.get-coursier" name="coursier_2.12" conf="compile, runtime" rev="2.1.13" rev-constraint-default="2.1.13" rev-constraint-dynamic="2.1.13" callerrev="2.1.13"/>
+				<artifacts>
+					<artifact name="coursier-cache_2.12" type="jar" ext="jar" status="successful" details="" size="456868" time="3823" location="/Users/tlopesdeoliveira/.ivy2/cache/io.get-coursier/coursier-cache_2.12/jars/coursier-cache_2.12-2.1.13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/get-coursier/coursier-cache_2.12/2.1.13/coursier-cache_2.12-2.1.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.github.alexarchambault.windows-ansi" name="windows-ansi">
+			<revision name="0.0.5" status="release" pubdate="20230417063736" resolver="public" artresolver="public" homepage="https://github.com/alexarchambault/windows-ansi" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="33">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="1695" time="2552" location="/Users/tlopesdeoliveira/.ivy2/cache/io.github.alexarchambault.windows-ansi/windows-ansi/ivy-0.0.5.xml" searched="true" original-local-location="/Users/tlopesdeoliveira/.ivy2/cache/io.github.alexarchambault.windows-ansi/windows-ansi/ivy-0.0.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/github/alexarchambault/windows-ansi/windows-ansi/0.0.5/windows-ansi-0.0.5.pom"/>
+				<caller organisation="io.get-coursier" name="coursier-cache_2.12" conf="compile, runtime" rev="0.0.5" rev-constraint-default="0.0.5" rev-constraint-dynamic="0.0.5" callerrev="2.1.13"/>
+				<artifacts>
+					<artifact name="windows-ansi" type="jar" ext="jar" status="successful" details="" size="2948" time="2038" location="/Users/tlopesdeoliveira/.ivy2/cache/io.github.alexarchambault.windows-ansi/windows-ansi/jars/windows-ansi-0.0.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/github/alexarchambault/windows-ansi/windows-ansi/0.0.5/windows-ansi-0.0.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.fusesource.jansi" name="jansi">
+			<revision name="1.18" status="release" pubdate="20190403082631" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="34">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4023" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/org.fusesource.jansi/jansi/ivy-1.18.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.18/jansi-1.18.pom"/>
+				<caller organisation="io.github.alexarchambault.windows-ansi" name="windows-ansi" conf="compile, runtime" rev="1.18" rev-constraint-default="1.18" rev-constraint-dynamic="1.18" callerrev="0.0.5"/>
+				<artifacts>
+					<artifact name="jansi" type="jar" ext="jar" status="no" details="" size="287352" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/org.fusesource.jansi/jansi/jars/jansi-1.18.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.18/jansi-1.18.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.virtuslab.scala-cli" name="config_2.12">
+			<revision name="0.2.1" status="release" pubdate="20230316050842" resolver="public" artresolver="public" homepage="https://github.com/VirtusLab/scala-cli" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="32">
+				<license name="Apache-2.0" url="https://spdx.org/licenses/Apache-2.0.html"/>
+				<metadata-artifact status="successful" details="" size="2172" time="2329" location="/Users/tlopesdeoliveira/.ivy2/cache/org.virtuslab.scala-cli/config_2.12/ivy-0.2.1.xml" searched="true" original-local-location="/Users/tlopesdeoliveira/.ivy2/cache/org.virtuslab.scala-cli/config_2.12/ivy-0.2.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/virtuslab/scala-cli/config_2.12/0.2.1/config_2.12-0.2.1.pom"/>
+				<caller organisation="io.get-coursier" name="coursier-cache_2.12" conf="compile, runtime" rev="0.2.1" rev-constraint-default="0.2.1" rev-constraint-dynamic="0.2.1" callerrev="2.1.13"/>
+				<artifacts>
+					<artifact name="config_2.12" type="jar" ext="jar" status="successful" details="" size="209189" time="2998" location="/Users/tlopesdeoliveira/.ivy2/cache/org.virtuslab.scala-cli/config_2.12/jars/config_2.12-0.2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/virtuslab/scala-cli/config_2.12/0.2.1/config_2.12-0.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.plexus" name="plexus-container-default">
+			<revision name="2.1.1" status="release" pubdate="20211222230543" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="29">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6815" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/org.codehaus.plexus/plexus-container-default/ivy-2.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-container-default/2.1.1/plexus-container-default-2.1.1.pom"/>
+				<caller organisation="io.get-coursier" name="coursier-cache_2.12" conf="compile, runtime" rev="2.1.1" rev-constraint-default="2.1.1" rev-constraint-dynamic="2.1.1" callerrev="2.1.13"/>
+				<artifacts>
+					<artifact name="plexus-container-default" type="jar" ext="jar" status="no" details="" size="228336" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/org.codehaus.plexus/plexus-container-default/jars/plexus-container-default-2.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-container-default/2.1.1/plexus-container-default-2.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.xbean" name="xbean-reflect">
+			<revision name="3.7" status="release" pubdate="20100514113117" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="31">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="11958" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/org.apache.xbean/xbean-reflect/ivy-3.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/xbean/xbean-reflect/3.7/xbean-reflect-3.7.pom"/>
+				<caller organisation="org.codehaus.plexus" name="plexus-container-default" conf="compile, runtime" rev="3.7" rev-constraint-default="3.7" rev-constraint-dynamic="3.7" callerrev="2.1.1"/>
+				<artifacts>
+					<artifact name="xbean-reflect" type="bundle" ext="jar" status="no" details="" size="148098" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/org.apache.xbean/xbean-reflect/bundles/xbean-reflect-3.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/xbean/xbean-reflect/3.7/xbean-reflect-3.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.plexus" name="plexus-classworlds">
+			<revision name="2.6.0" status="release" pubdate="20181228172123" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="30">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4009" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/org.codehaus.plexus/plexus-classworlds/ivy-2.6.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-classworlds/2.6.0/plexus-classworlds-2.6.0.pom"/>
+				<caller organisation="org.codehaus.plexus" name="plexus-container-default" conf="compile, runtime" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="2.1.1"/>
+				<artifacts>
+					<artifact name="plexus-classworlds" type="bundle" ext="jar" status="no" details="" size="52873" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/org.codehaus.plexus/plexus-classworlds/bundles/plexus-classworlds-2.6.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-classworlds/2.6.0/plexus-classworlds-2.6.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.plexus" name="plexus-archiver">
+			<revision name="4.9.0" status="release" pubdate="20231105100517" resolver="public" artresolver="public" homepage="https://codehaus-plexus.github.io/plexus-archiver/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="5792" time="2387" location="/Users/tlopesdeoliveira/.ivy2/cache/org.codehaus.plexus/plexus-archiver/ivy-4.9.0.xml" searched="true" original-local-location="/Users/tlopesdeoliveira/.ivy2/cache/org.codehaus.plexus/plexus-archiver/ivy-4.9.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-archiver/4.9.0/plexus-archiver-4.9.0.pom"/>
+				<caller organisation="io.get-coursier" name="coursier-cache_2.12" conf="compile, runtime" rev="4.9.0" rev-constraint-default="4.9.0" rev-constraint-dynamic="4.9.0" callerrev="2.1.13"/>
+				<artifacts>
+					<artifact name="plexus-archiver" type="jar" ext="jar" status="successful" details="" size="224611" time="2651" location="/Users/tlopesdeoliveira/.ivy2/cache/org.codehaus.plexus/plexus-archiver/jars/plexus-archiver-4.9.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-archiver/4.9.0/plexus-archiver-4.9.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.luben" name="zstd-jni">
+			<revision name="1.5.5-10" status="release" pubdate="20231101065103" resolver="public" artresolver="public" homepage="https://github.com/luben/zstd-jni" extra-info.versionScheme="strict" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="38">
+				<license name="BSD 2-Clause License" url="https://opensource.org/licenses/BSD-2-Clause"/>
+				<metadata-artifact status="successful" details="" size="2009" time="2133" location="/Users/tlopesdeoliveira/.ivy2/cache/com.github.luben/zstd-jni/ivy-1.5.5-10.xml" searched="true" original-local-location="/Users/tlopesdeoliveira/.ivy2/cache/com.github.luben/zstd-jni/ivy-1.5.5-10.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/luben/zstd-jni/1.5.5-10/zstd-jni-1.5.5-10.pom"/>
+				<caller organisation="org.codehaus.plexus" name="plexus-archiver" conf="compile, runtime" rev="1.5.5-10" rev-constraint-default="1.5.5-10" rev-constraint-dynamic="1.5.5-10" callerrev="4.9.0"/>
+				<artifacts>
+					<artifact name="zstd-jni" type="jar" ext="jar" status="successful" details="" size="6749816" time="6794" location="/Users/tlopesdeoliveira/.ivy2/cache/com.github.luben/zstd-jni/jars/zstd-jni-1.5.5-10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/luben/zstd-jni/1.5.5-10/zstd-jni-1.5.5-10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.iq80.snappy" name="snappy">
+			<revision name="0.4" status="release" pubdate="20150713141910" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/dain/snappy" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3364" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/org.iq80.snappy/snappy/ivy-0.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/iq80/snappy/snappy/0.4/snappy-0.4.pom"/>
+				<caller organisation="org.codehaus.plexus" name="plexus-archiver" conf="compile, runtime" rev="0.4" rev-constraint-default="0.4" rev-constraint-dynamic="0.4" callerrev="4.9.0"/>
+				<artifacts>
+					<artifact name="snappy" type="jar" ext="jar" status="no" details="" size="57954" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/org.iq80.snappy/snappy/jars/snappy-0.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/iq80/snappy/snappy/0.4/snappy-0.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-compress">
+			<revision name="1.24.0" status="release" pubdate="20230904054248" resolver="public" artresolver="public" homepage="https://commons.apache.org/proper/commons-compress/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="21798" time="2397" location="/Users/tlopesdeoliveira/.ivy2/cache/org.apache.commons/commons-compress/ivy-1.24.0.xml" searched="true" original-local-location="/Users/tlopesdeoliveira/.ivy2/cache/org.apache.commons/commons-compress/ivy-1.24.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.24.0/commons-compress-1.24.0.pom"/>
+				<caller organisation="org.codehaus.plexus" name="plexus-archiver" conf="compile, runtime" rev="1.24.0" rev-constraint-default="1.24.0" rev-constraint-dynamic="1.24.0" callerrev="4.9.0"/>
+				<artifacts>
+					<artifact name="commons-compress" type="jar" ext="jar" status="successful" details="" size="1076223" time="3252" location="/Users/tlopesdeoliveira/.ivy2/cache/org.apache.commons/commons-compress/jars/commons-compress-1.24.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.24.0/commons-compress-1.24.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.tukaani" name="xz">
+			<revision name="1.9" status="release" pubdate="20210312145344" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://tukaani.org/xz/java.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="37">
+				<license name="Public Domain"/>
+				<metadata-artifact status="no" details="" size="2404" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/org.tukaani/xz/ivy-1.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/tukaani/xz/1.9/xz-1.9.pom"/>
+				<caller organisation="org.codehaus.plexus" name="plexus-archiver" conf="compile, runtime" rev="1.9" rev-constraint-default="1.9" rev-constraint-dynamic="1.9" callerrev="4.9.0"/>
+				<artifacts>
+					<artifact name="xz" type="jar" ext="jar" status="no" details="" size="116013" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/org.tukaani/xz/jars/xz-1.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/tukaani/xz/1.9/xz-1.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.plexus" name="plexus-io">
+			<revision name="3.4.1" status="release" pubdate="20230228134419" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5499" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/org.codehaus.plexus/plexus-io/ivy-3.4.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-io/3.4.1/plexus-io-3.4.1.pom"/>
+				<caller organisation="org.codehaus.plexus" name="plexus-archiver" conf="compile, runtime" rev="3.4.1" rev-constraint-default="3.4.1" rev-constraint-dynamic="3.4.1" callerrev="4.9.0"/>
+				<artifacts>
+					<artifact name="plexus-io" type="jar" ext="jar" status="no" details="" size="79393" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/org.codehaus.plexus/plexus-io/jars/plexus-io-3.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-io/3.4.1/plexus-io-3.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-simple">
+			<revision name="1.7.36" status="release" pubdate="20220208053401" resolver="public" artresolver="public" homepage="http://www.slf4j.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="36">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="successful" details="" size="1021" time="3068" location="/Users/tlopesdeoliveira/.ivy2/cache/org.slf4j/slf4j-simple/ivy-1.7.36.xml" searched="true" original-local-location="/Users/tlopesdeoliveira/.ivy2/cache/org.slf4j/slf4j-simple/ivy-1.7.36.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.pom"/>
+				<caller organisation="org.foundweekends.giter8" name="giter8-launcher_2.12" conf="compile, runtime" rev="1.7.36" rev-constraint-default="1.7.36" rev-constraint-dynamic="1.7.36" callerrev="0.17.0"/>
+				<artifacts>
+					<artifact name="slf4j-simple" type="jar" ext="jar" status="successful" details="" size="15333" time="1766" location="/Users/tlopesdeoliveira/.ivy2/cache/org.slf4j/slf4j-simple/jars/slf4j-simple-1.7.36.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.36" status="release" pubdate="20220208103351" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="5582" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.36.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.pom"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.ssh.apache" conf="compile, runtime" rev="1.7.30" rev-constraint-default="1.7.30" rev-constraint-dynamic="1.7.30" callerrev="5.13.3.202401111512-r"/>
+				<caller organisation="org.apache.sshd" name="sshd-osgi" conf="compile, runtime" rev="1.7.30" rev-constraint-default="1.7.30" rev-constraint-dynamic="1.7.30" callerrev="2.7.0"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit" conf="compile, runtime" rev="1.7.30" rev-constraint-default="1.7.30" rev-constraint-dynamic="1.7.30" callerrev="5.13.3.202401111512-r"/>
+				<caller organisation="org.slf4j" name="slf4j-simple" conf="compile, runtime" rev="1.7.36" rev-constraint-default="1.7.36" rev-constraint-dynamic="1.7.36" callerrev="1.7.36"/>
+				<caller organisation="org.slf4j" name="jcl-over-slf4j" conf="compile, runtime" rev="1.7.30" rev-constraint-default="1.7.30" rev-constraint-dynamic="1.7.30" callerrev="1.7.30"/>
+				<caller organisation="org.codehaus.plexus" name="plexus-archiver" conf="compile, runtime" rev="1.7.36" rev-constraint-default="1.7.36" rev-constraint-dynamic="1.7.36" callerrev="4.9.0"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="41125" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.36.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.7.30" status="release" pubdate="20191216180337" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="5347" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.30.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.pom"/>
+				<evicted-by rev="1.7.36"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.ssh.apache" conf="compile, runtime" rev="1.7.30" rev-constraint-default="1.7.30" rev-constraint-dynamic="1.7.30" callerrev="5.13.3.202401111512-r"/>
+				<caller organisation="org.apache.sshd" name="sshd-osgi" conf="compile, runtime" rev="1.7.30" rev-constraint-default="1.7.30" rev-constraint-dynamic="1.7.30" callerrev="2.7.0"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit" conf="compile, runtime" rev="1.7.30" rev-constraint-default="1.7.30" rev-constraint-dynamic="1.7.30" callerrev="5.13.3.202401111512-r"/>
+				<caller organisation="org.slf4j" name="jcl-over-slf4j" conf="compile, runtime" rev="1.7.30" rev-constraint-default="1.7.30" rev-constraint-dynamic="1.7.30" callerrev="1.7.30"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.plexus" name="plexus-utils">
+			<revision name="4.0.0" status="release" pubdate="20230522081506" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="24">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="8656" time="2478" location="/Users/tlopesdeoliveira/.ivy2/cache/org.codehaus.plexus/plexus-utils/ivy-4.0.0.xml" searched="true" original-local-location="/Users/tlopesdeoliveira/.ivy2/cache/org.codehaus.plexus/plexus-utils/ivy-4.0.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/4.0.0/plexus-utils-4.0.0.pom"/>
+				<caller organisation="org.codehaus.plexus" name="plexus-container-default" conf="compile, runtime" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="2.1.1"/>
+				<caller organisation="org.codehaus.plexus" name="plexus-io" conf="compile, runtime" rev="3.5.0" rev-constraint-default="3.5.0" rev-constraint-dynamic="3.5.0" callerrev="3.4.1"/>
+				<caller organisation="org.codehaus.plexus" name="plexus-archiver" conf="compile, runtime" rev="4.0.0" rev-constraint-default="4.0.0" rev-constraint-dynamic="4.0.0" callerrev="4.9.0"/>
+				<artifacts>
+					<artifact name="plexus-utils" type="jar" ext="jar" status="successful" details="" size="192368" time="1747" location="/Users/tlopesdeoliveira/.ivy2/cache/org.codehaus.plexus/plexus-utils/jars/plexus-utils-4.0.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/4.0.0/plexus-utils-4.0.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="3.1.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="4.0.0"/>
+				<caller organisation="org.codehaus.plexus" name="plexus-container-default" conf="compile, runtime" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="2.1.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="3.5.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="4.0.0"/>
+				<caller organisation="org.codehaus.plexus" name="plexus-io" conf="compile, runtime" rev="3.5.0" rev-constraint-default="3.5.0" rev-constraint-dynamic="3.5.0" callerrev="3.4.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.inject" name="javax.inject">
+			<revision name="1" status="release" pubdate="20091013203500" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/atinject/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2506" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/javax.inject/javax.inject/ivy-1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom"/>
+				<caller organisation="org.codehaus.plexus" name="plexus-io" conf="compile, runtime" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="3.4.1"/>
+				<caller organisation="org.codehaus.plexus" name="plexus-archiver" conf="compile, runtime" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="4.9.0"/>
+				<artifacts>
+					<artifact name="javax.inject" type="jar" ext="jar" status="no" details="" size="2497" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.get-coursier.jniutils" name="windows-jni-utils">
+			<revision name="0.3.3" status="release" pubdate="20220221103820" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/coursier/jni-utils" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
+				<license name="Apache-2.0" url="https://spdx.org/licenses/Apache-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2497" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/io.get-coursier.jniutils/windows-jni-utils/ivy-0.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/get-coursier/jniutils/windows-jni-utils/0.3.3/windows-jni-utils-0.3.3.pom"/>
+				<caller organisation="io.get-coursier" name="coursier-cache_2.12" conf="compile, runtime" rev="0.3.3" rev-constraint-default="0.3.3" rev-constraint-dynamic="0.3.3" callerrev="2.1.13"/>
+				<artifacts>
+					<artifact name="windows-jni-utils" type="jar" ext="jar" status="no" details="" size="82498" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/io.get-coursier.jniutils/windows-jni-utils/jars/windows-jni-utils-0.3.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/get-coursier/jniutils/windows-jni-utils/0.3.3/windows-jni-utils-0.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.get-coursier" name="coursier-core_2.12">
+			<revision name="2.1.13" status="release" pubdate="20240917081050" resolver="public" artresolver="public" homepage="https://github.com/coursier/coursier" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<license name="Apache-2.0" url="https://spdx.org/licenses/Apache-2.0.html"/>
+				<metadata-artifact status="successful" details="" size="2312" time="2613" location="/Users/tlopesdeoliveira/.ivy2/cache/io.get-coursier/coursier-core_2.12/ivy-2.1.13.xml" searched="true" original-local-location="/Users/tlopesdeoliveira/.ivy2/cache/io.get-coursier/coursier-core_2.12/ivy-2.1.13.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/get-coursier/coursier-core_2.12/2.1.13/coursier-core_2.12-2.1.13.pom"/>
+				<caller organisation="io.get-coursier" name="coursier_2.12" conf="compile, runtime" rev="2.1.13" rev-constraint-default="2.1.13" rev-constraint-dynamic="2.1.13" callerrev="2.1.13"/>
+				<artifacts>
+					<artifact name="coursier-core_2.12" type="jar" ext="jar" status="successful" details="" size="1329477" time="3533" location="/Users/tlopesdeoliveira/.ivy2/cache/io.get-coursier/coursier-core_2.12/jars/coursier-core_2.12-2.1.13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/get-coursier/coursier-core_2.12/2.1.13/coursier-core_2.12-2.1.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.get-coursier" name="coursier-util_2.12">
+			<revision name="2.1.13" status="release" pubdate="20240917081103" resolver="public" artresolver="public" homepage="https://github.com/coursier/coursier" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
+				<license name="Apache-2.0" url="https://spdx.org/licenses/Apache-2.0.html"/>
+				<metadata-artifact status="successful" details="" size="1939" time="2199" location="/Users/tlopesdeoliveira/.ivy2/cache/io.get-coursier/coursier-util_2.12/ivy-2.1.13.xml" searched="true" original-local-location="/Users/tlopesdeoliveira/.ivy2/cache/io.get-coursier/coursier-util_2.12/ivy-2.1.13.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/get-coursier/coursier-util_2.12/2.1.13/coursier-util_2.12-2.1.13.pom"/>
+				<caller organisation="io.get-coursier" name="coursier-cache_2.12" conf="compile, runtime" rev="2.1.13" rev-constraint-default="2.1.13" rev-constraint-dynamic="2.1.13" callerrev="2.1.13"/>
+				<caller organisation="io.get-coursier" name="coursier-core_2.12" conf="compile, runtime" rev="2.1.13" rev-constraint-default="2.1.13" rev-constraint-dynamic="2.1.13" callerrev="2.1.13"/>
+				<artifacts>
+					<artifact name="coursier-util_2.12" type="jar" ext="jar" status="successful" details="" size="557546" time="3272" location="/Users/tlopesdeoliveira/.ivy2/cache/io.get-coursier/coursier-util_2.12/jars/coursier-util_2.12-2.1.13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/get-coursier/coursier-util_2.12/2.1.13/coursier-util_2.12-2.1.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-collection-compat_2.12">
+			<revision name="2.12.0" status="release" pubdate="20240415112319" resolver="public" artresolver="public" homepage="http://www.scala-lang.org/" extra-info.versionScheme="early-semver" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="2092" time="2026" location="/Users/tlopesdeoliveira/.ivy2/cache/org.scala-lang.modules/scala-collection-compat_2.12/ivy-2.12.0.xml" searched="true" original-local-location="/Users/tlopesdeoliveira/.ivy2/cache/org.scala-lang.modules/scala-collection-compat_2.12/ivy-2.12.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.12/2.12.0/scala-collection-compat_2.12-2.12.0.pom"/>
+				<caller organisation="org.virtuslab.scala-cli" name="config_2.12" conf="compile, runtime" rev="2.9.0" rev-constraint-default="2.9.0" rev-constraint-dynamic="2.9.0" callerrev="0.2.1"/>
+				<caller organisation="io.get-coursier" name="coursier-util_2.12" conf="compile, runtime" rev="2.12.0" rev-constraint-default="2.12.0" rev-constraint-dynamic="2.12.0" callerrev="2.1.13"/>
+				<artifacts>
+					<artifact name="scala-collection-compat_2.12" type="jar" ext="jar" status="successful" details="" size="308545" time="3151" location="/Users/tlopesdeoliveira/.ivy2/cache/org.scala-lang.modules/scala-collection-compat_2.12/jars/scala-collection-compat_2.12-2.12.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.12/2.12.0/scala-collection-compat_2.12-2.12.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.9.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.12.0"/>
+				<caller organisation="org.virtuslab.scala-cli" name="config_2.12" conf="compile, runtime" rev="2.9.0" rev-constraint-default="2.9.0" rev-constraint-dynamic="2.9.0" callerrev="0.2.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-xml_2.12">
+			<revision name="2.3.0" status="release" pubdate="20240415111751" resolver="public" artresolver="public" homepage="http://www.scala-lang.org/" extra-info.apiURL="https://javadoc.io/doc/org.scala-lang.modules/scala-xml_2.13/" extra-info.versionScheme="early-semver" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="2925" time="2190" location="/Users/tlopesdeoliveira/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/ivy-2.3.0.xml" searched="true" original-local-location="/Users/tlopesdeoliveira/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/ivy-2.3.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/2.3.0/scala-xml_2.12-2.3.0.pom"/>
+				<caller organisation="io.get-coursier" name="coursier-core_2.12" conf="compile, runtime" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="2.1.13"/>
+				<artifacts>
+					<artifact name="scala-xml_2.12" type="bundle" ext="jar" status="successful" details="" size="530212" time="3262" location="/Users/tlopesdeoliveira/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-2.3.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/2.3.0/scala-xml_2.12-2.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.github.alexarchambault" name="concurrent-reference-hash-map">
+			<revision name="1.1.0" status="release" pubdate="20210406141927" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/coursier/concurrent-reference-hash-map" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2555" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/io.github.alexarchambault/concurrent-reference-hash-map/ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/github/alexarchambault/concurrent-reference-hash-map/1.1.0/concurrent-reference-hash-map-1.1.0.pom"/>
+				<caller organisation="io.get-coursier" name="coursier-core_2.12" conf="compile, runtime" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="2.1.13"/>
+				<artifacts>
+					<artifact name="concurrent-reference-hash-map" type="jar" ext="jar" status="no" details="" size="27116" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/io.github.alexarchambault/concurrent-reference-hash-map/jars/concurrent-reference-hash-map-1.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/github/alexarchambault/concurrent-reference-hash-map/1.1.0/concurrent-reference-hash-map-1.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.plokhotnyuk.jsoniter-scala" name="jsoniter-scala-core_2.12">
+			<revision name="2.13.5" status="release" pubdate="20220216142343" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/plokhotnyuk/jsoniter-scala" extra-info.versionScheme="early-semver" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<license name="MIT License" url="https://opensource.org/licenses/mit-license.html"/>
+				<metadata-artifact status="no" details="" size="3252" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/com.github.plokhotnyuk.jsoniter-scala/jsoniter-scala-core_2.12/ivy-2.13.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/plokhotnyuk/jsoniter-scala/jsoniter-scala-core_2.12/2.13.5/jsoniter-scala-core_2.12-2.13.5.pom"/>
+				<caller organisation="io.get-coursier" name="coursier_2.12" conf="compile, runtime" rev="2.13.5" rev-constraint-default="2.13.5" rev-constraint-dynamic="2.13.5" callerrev="2.1.13"/>
+				<caller organisation="org.virtuslab.scala-cli" name="config_2.12" conf="compile, runtime" rev="2.13.5.2" rev-constraint-default="2.13.5.2" rev-constraint-dynamic="2.13.5.2" callerrev="0.2.1"/>
+				<artifacts>
+					<artifact name="jsoniter-scala-core_2.12" type="jar" ext="jar" status="no" details="" size="175721" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/com.github.plokhotnyuk.jsoniter-scala/jsoniter-scala-core_2.12/jars/jsoniter-scala-core_2.12-2.13.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/plokhotnyuk/jsoniter-scala/jsoniter-scala-core_2.12/2.13.5/jsoniter-scala-core_2.12-2.13.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.13.5.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.13.5"/>
+				<caller organisation="org.virtuslab.scala-cli" name="config_2.12" conf="compile, runtime" rev="2.13.5.2" rev-constraint-default="2.13.5.2" rev-constraint-dynamic="2.13.5.2" callerrev="0.2.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.foundweekends.giter8" name="giter8-cli-git_2.12">
+			<revision name="0.17.0" status="release" pubdate="20241213220706" resolver="public" artresolver="public" homepage="https://www.foundweekends.org/giter8/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="4020" time="2423" location="/Users/tlopesdeoliveira/.ivy2/cache/org.foundweekends.giter8/giter8-cli-git_2.12/ivy-0.17.0.xml" searched="true" original-local-location="/Users/tlopesdeoliveira/.ivy2/cache/org.foundweekends.giter8/giter8-cli-git_2.12/ivy-0.17.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/foundweekends/giter8/giter8-cli-git_2.12/0.17.0/giter8-cli-git_2.12-0.17.0.pom"/>
+				<caller organisation="org.foundweekends.giter8" name="giter8-launcher_2.12" conf="compile, runtime" rev="0.17.0" rev-constraint-default="0.17.0" rev-constraint-dynamic="0.17.0" callerrev="0.17.0"/>
+				<artifacts>
+					<artifact name="giter8-cli-git_2.12" type="jar" ext="jar" status="successful" details="" size="75830" time="2789" location="/Users/tlopesdeoliveira/.ivy2/cache/org.foundweekends.giter8/giter8-cli-git_2.12/jars/giter8-cli-git_2.12-0.17.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/foundweekends/giter8/giter8-cli-git_2.12/0.17.0/giter8-cli-git_2.12-0.17.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-io" name="commons-io">
+			<revision name="2.18.0" status="release" pubdate="20241116072703" resolver="public" artresolver="public" homepage="https://commons.apache.org/proper/commons-io/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="20032" time="2378" location="/Users/tlopesdeoliveira/.ivy2/cache/commons-io/commons-io/ivy-2.18.0.xml" searched="true" original-local-location="/Users/tlopesdeoliveira/.ivy2/cache/commons-io/commons-io/ivy-2.18.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-io/commons-io/2.18.0/commons-io-2.18.0.pom"/>
+				<caller organisation="org.foundweekends.giter8" name="giter8-cli-git_2.12" conf="compile, runtime" rev="2.18.0" rev-constraint-default="2.18.0" rev-constraint-dynamic="2.18.0" callerrev="0.17.0"/>
+				<caller organisation="org.codehaus.plexus" name="plexus-io" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="3.4.1"/>
+				<caller organisation="org.codehaus.plexus" name="plexus-archiver" conf="compile, runtime" rev="2.15.0" rev-constraint-default="2.15.0" rev-constraint-dynamic="2.15.0" callerrev="4.9.0"/>
+				<artifacts>
+					<artifact name="commons-io" type="jar" ext="jar" status="successful" details="" size="538910" time="3401" location="/Users/tlopesdeoliveira/.ivy2/cache/commons-io/commons-io/jars/commons-io-2.18.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-io/commons-io/2.18.0/commons-io-2.18.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.15.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.18.0"/>
+				<caller organisation="org.codehaus.plexus" name="plexus-io" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="3.4.1"/>
+				<caller organisation="org.codehaus.plexus" name="plexus-archiver" conf="compile, runtime" rev="2.15.0" rev-constraint-default="2.15.0" rev-constraint-dynamic="2.15.0" callerrev="4.9.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.11.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*)" position="-1">
+				<evicted-by rev="2.18.0"/>
+				<caller organisation="org.codehaus.plexus" name="plexus-io" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="3.4.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jgit" name="org.eclipse.jgit.ssh.apache">
+			<revision name="5.13.3.202401111512-r" status="release" pubdate="20240111082433" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="Eclipse Distribution License (New BSD License)"/>
+				<metadata-artifact status="successful" details="" size="7558" time="2402" location="/Users/tlopesdeoliveira/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.ssh.apache/ivy-5.13.3.202401111512-r.xml" searched="true" original-local-location="/Users/tlopesdeoliveira/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.ssh.apache/ivy-5.13.3.202401111512-r.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit.ssh.apache/5.13.3.202401111512-r/org.eclipse.jgit.ssh.apache-5.13.3.202401111512-r.pom"/>
+				<caller organisation="org.foundweekends.giter8" name="giter8-cli-git_2.12" conf="compile, runtime" rev="5.13.3.202401111512-r" rev-constraint-default="5.13.3.202401111512-r" rev-constraint-dynamic="5.13.3.202401111512-r" callerrev="0.17.0"/>
+				<artifacts>
+					<artifact name="org.eclipse.jgit.ssh.apache" type="jar" ext="jar" status="successful" details="" size="181668" time="2606" location="/Users/tlopesdeoliveira/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit.ssh.apache/jars/org.eclipse.jgit.ssh.apache-5.13.3.202401111512-r.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit.ssh.apache/5.13.3.202401111512-r/org.eclipse.jgit.ssh.apache-5.13.3.202401111512-r.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.sshd" name="sshd-osgi">
+			<revision name="2.7.0" status="release" pubdate="20210511110644" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="Apache 2.0 License" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="19926" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/org.apache.sshd/sshd-osgi/ivy-2.7.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/sshd/sshd-osgi/2.7.0/sshd-osgi-2.7.0.pom"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.ssh.apache" conf="compile, runtime" rev="2.7.0" rev-constraint-default="2.7.0" rev-constraint-dynamic="2.7.0" callerrev="5.13.3.202401111512-r"/>
+				<artifacts>
+					<artifact name="sshd-osgi" type="jar" ext="jar" status="no" details="" size="1749213" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/org.apache.sshd/sshd-osgi/jars/sshd-osgi-2.7.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/sshd/sshd-osgi/2.7.0/sshd-osgi-2.7.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="jcl-over-slf4j">
+			<revision name="1.7.30" status="release" pubdate="20191216180518" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5434" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/org.slf4j/jcl-over-slf4j/ivy-1.7.30.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.pom"/>
+				<caller organisation="org.apache.sshd" name="sshd-osgi" conf="compile, runtime" rev="1.7.30" rev-constraint-default="1.7.30" rev-constraint-dynamic="1.7.30" callerrev="2.7.0"/>
+				<artifacts>
+					<artifact name="jcl-over-slf4j" type="jar" ext="jar" status="no" details="" size="16537" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.30.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.i2p.crypto" name="eddsa">
+			<revision name="0.3.0" status="release" pubdate="20180505182638" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/str4d/ed25519-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<license name="CC0 1.0 Universal" url="https://creativecommons.org/publicdomain/zero/1.0/"/>
+				<metadata-artifact status="no" details="" size="3334" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/net.i2p.crypto/eddsa/ivy-0.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/i2p/crypto/eddsa/0.3.0/eddsa-0.3.0.pom"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.ssh.apache" conf="compile, runtime" rev="0.3.0" rev-constraint-default="0.3.0" rev-constraint-dynamic="0.3.0" callerrev="5.13.3.202401111512-r"/>
+				<artifacts>
+					<artifact name="eddsa" type="bundle" ext="jar" status="no" details="" size="63292" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/net.i2p.crypto/eddsa/bundles/eddsa-0.3.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/i2p/crypto/eddsa/0.3.0/eddsa-0.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jgit" name="org.eclipse.jgit">
+			<revision name="5.13.3.202401111512-r" status="release" pubdate="20240111082006" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="Eclipse Distribution License (New BSD License)"/>
+				<metadata-artifact status="successful" details="" size="7552" time="2206" location="/Users/tlopesdeoliveira/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit/ivy-5.13.3.202401111512-r.xml" searched="true" original-local-location="/Users/tlopesdeoliveira/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit/ivy-5.13.3.202401111512-r.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/5.13.3.202401111512-r/org.eclipse.jgit-5.13.3.202401111512-r.pom"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit.ssh.apache" conf="compile, runtime" rev="5.13.3.202401111512-r" rev-constraint-default="5.13.3.202401111512-r" rev-constraint-dynamic="5.13.3.202401111512-r" callerrev="5.13.3.202401111512-r"/>
+				<caller organisation="org.foundweekends.giter8" name="giter8-cli-git_2.12" conf="compile, runtime" rev="5.13.3.202401111512-r" rev-constraint-default="5.13.3.202401111512-r" rev-constraint-dynamic="5.13.3.202401111512-r" callerrev="0.17.0"/>
+				<artifacts>
+					<artifact name="org.eclipse.jgit" type="jar" ext="jar" status="successful" details="" size="2849142" time="8861" location="/Users/tlopesdeoliveira/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit/jars/org.eclipse.jgit-5.13.3.202401111512-r.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/5.13.3.202401111512-r/org.eclipse.jgit-5.13.3.202401111512-r.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.googlecode.javaewah" name="JavaEWAH">
+			<revision name="1.1.13" status="release" pubdate="20210928221923" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lemire/javaewah" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4081" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/com.googlecode.javaewah/JavaEWAH/ivy-1.1.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/1.1.13/JavaEWAH-1.1.13.pom"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit" conf="compile, runtime" rev="1.1.13" rev-constraint-default="1.1.13" rev-constraint-dynamic="1.1.13" callerrev="5.13.3.202401111512-r"/>
+				<artifacts>
+					<artifact name="JavaEWAH" type="bundle" ext="jar" status="no" details="" size="166895" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/com.googlecode.javaewah/JavaEWAH/bundles/JavaEWAH-1.1.13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/1.1.13/JavaEWAH-1.1.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.scopt" name="scopt_2.12">
+			<revision name="4.1.0" status="release" pubdate="20220702165951" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scopt/scopt" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<license name="MIT" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="2798" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/com.github.scopt/scopt_2.12/ivy-4.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/scopt/scopt_2.12/4.1.0/scopt_2.12-4.1.0.pom"/>
+				<caller organisation="org.foundweekends.giter8" name="giter8-cli-git_2.12" conf="compile, runtime" rev="4.1.0" rev-constraint-default="4.1.0" rev-constraint-dynamic="4.1.0" callerrev="0.17.0"/>
+				<artifacts>
+					<artifact name="scopt_2.12" type="jar" ext="jar" status="no" details="" size="124306" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/com.github.scopt/scopt_2.12/jars/scopt_2.12-4.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/scopt/scopt_2.12/4.1.0/scopt_2.12-4.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.12.20" status="release" pubdate="20240902095620" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://www.scala-lang.org/" extra-info.apiURL="https://www.scala-lang.org/api/2.12.20/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="1">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2662" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/org.scala-lang/scala-library/ivy-2.12.20.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.20/scala-library-2.12.20.pom"/>
+				<caller organisation="org.scala-lang.modules" name="scala-collection-compat_2.12" conf="compile, runtime" rev="2.12.20" rev-constraint-default="2.12.20" rev-constraint-dynamic="2.12.20" callerrev="2.12.0"/>
+				<caller organisation="org.foundweekends.giter8" name="giter8-cli-git_2.12" conf="compile, runtime" rev="2.12.20" rev-constraint-default="2.12.20" rev-constraint-dynamic="2.12.20" callerrev="0.17.0"/>
+				<caller organisation="org.scala-lang.modules" name="scala-xml_2.12" conf="compile, runtime" rev="2.12.20" rev-constraint-default="2.12.20" rev-constraint-dynamic="2.12.20" callerrev="2.3.0"/>
+				<caller organisation="com.github.plokhotnyuk.jsoniter-scala" name="jsoniter-scala-core_2.12" conf="compile, runtime" rev="2.12.20" rev-constraint-default="2.12.20" rev-constraint-dynamic="2.12.20" callerrev="2.13.5"/>
+				<caller organisation="io.get-coursier" name="coursier-cache_2.12" conf="compile, runtime" rev="2.12.20" rev-constraint-default="2.12.20" rev-constraint-dynamic="2.12.20" callerrev="2.1.13"/>
+				<caller organisation="io.get-coursier" name="coursier_2.12" conf="compile, runtime" rev="2.12.20" rev-constraint-default="2.12.20" rev-constraint-dynamic="2.12.20" callerrev="2.1.13"/>
+				<caller organisation="org.virtuslab.scala-cli" name="config_2.12" conf="compile, runtime" rev="2.12.20" rev-constraint-default="2.12.20" rev-constraint-dynamic="2.12.20" callerrev="0.2.1"/>
+				<caller organisation="org.foundweekends.giter8" name="giter8-launcher_2.12" conf="compile, runtime" rev="2.12.20" rev-constraint-default="2.12.20" rev-constraint-dynamic="2.12.20" callerrev="0.17.0"/>
+				<caller organisation="io.get-coursier" name="coursier-util_2.12" conf="compile, runtime" rev="2.12.20" rev-constraint-default="2.12.20" rev-constraint-dynamic="2.12.20" callerrev="2.1.13"/>
+				<caller organisation="org.scala-sbt.sbt-giter8-resolver" name="sbt-giter8-resolver_2.12" conf="default, compile, runtime, master" rev="2.12.20" rev-constraint-default="2.12.20" rev-constraint-dynamic="2.12.20" callerrev="0.17.0"/>
+				<caller organisation="com.github.scopt" name="scopt_2.12" conf="compile, runtime" rev="2.12.20" rev-constraint-default="2.12.20" rev-constraint-dynamic="2.12.20" callerrev="4.1.0"/>
+				<caller organisation="io.get-coursier" name="coursier-core_2.12" conf="compile, runtime" rev="2.12.20" rev-constraint-default="2.12.20" rev-constraint-dynamic="2.12.20" callerrev="2.1.13"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5436770" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.20.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.20/scala-library-2.12.20.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="template-resolver">
+			<revision name="0.1" status="release" pubdate="20160821234715" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/template-resolver" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2691" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/org.scala-sbt/template-resolver/ivy-0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/template-resolver/0.1/template-resolver-0.1.pom"/>
+				<caller organisation="org.scala-sbt.sbt-giter8-resolver" name="sbt-giter8-resolver_2.12" conf="default, compile, runtime, master" rev="0.1" rev-constraint-default="0.1" rev-constraint-dynamic="0.1" callerrev="0.17.0"/>
+				<artifacts>
+					<artifact name="template-resolver" type="jar" ext="jar" status="no" details="" size="807" time="0" location="/Users/tlopesdeoliveira/.ivy2/cache/org.scala-sbt/template-resolver/jars/template-resolver-0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/template-resolver/0.1/template-resolver-0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
