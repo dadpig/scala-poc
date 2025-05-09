@@ -6,8 +6,11 @@ def main(): Unit =
   // to see how IntelliJ IDEA suggests fixing it.
   (1 to 5).map(println)
 
-  for (i <- 1 to 5) do
+  for (i <- 1 to 5) do {
     //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
     // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
     println(s"i = $i")
+
+    println("My redis server")
+  }
 
