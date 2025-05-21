@@ -1,11 +1,17 @@
-ThisBuild / version := "0.1.0-SNAPSHOT"
+name := """scala-redis-server"""
+organization := "com.example"
 
-ThisBuild / scalaVersion := "3.3.5"
+version := "1.0-SNAPSHOT"
 
-lazy val root = (project in file("."))
-  .settings(
-    name := "scala-redis-server"
-  )
+lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
-///resolvers += Resolver.url("my-test-repo", url("https://example.org/repo-releases/"))
-resolvers += "Artima Maven Repository" at "https://repo.artima.com/releases"
+scalaVersion := "2.13.16"
+
+libraryDependencies += guice
+libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "7.0.1" % Test
+
+// Adds additional packages into Twirl
+//TwirlKeys.templateImports += "com.example.controllers._"
+
+// Adds additional packages into conf/routes
+// play.sbt.routes.RoutesKeys.routesImport += "com.example.binders._"
