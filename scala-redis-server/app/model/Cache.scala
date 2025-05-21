@@ -20,4 +20,7 @@ class Cache {
     cache.put(key, value)
   }
 
+  override def toString: String = {
+    cache.map { case (k, v) => s"$k -> $v" }.mkString(", ")
+  }
 }
