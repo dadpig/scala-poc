@@ -1,10 +1,12 @@
+package com.logisticsystem.business
+
 class Weather(val temperature: Double, 
               val humidity: Double, 
               val windSpeed: Double) {
 
   def isHot: Boolean = temperature > 30.0
 
-  def isHumid: Boolean = humidity > 70.0
+  def isStormy: Boolean = humidity > 70.0
 
   def isWindy: Boolean = windSpeed > 20.0
 
