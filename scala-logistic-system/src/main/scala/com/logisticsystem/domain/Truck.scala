@@ -1,7 +1,7 @@
 package com.logisticsystem.domain
 
-import com.logisticsystem.business.GasOil
+import com.logisticsystem.business.{GasOil, Weather}
 
-class Truck(name: String, distance: Int, capacity: Int, price: Double, gasOil: GasOil) extends Transport(name, distance, capacity, price, gasOil) {
+class Truck(name: String, distance: Int, capacity: Int, price: Double, gasOil: GasOil, weather: Weather) extends Transport(name, distance, capacity, price, gasOil, weather) {
 
 }
