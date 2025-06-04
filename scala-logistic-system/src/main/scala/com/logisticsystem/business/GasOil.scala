@@ -8,6 +8,9 @@ class GasOil (val amount: Int, val price:Double) {
 
   
   override def toString: String = {
-    s"GasOil(price=$price)"
+    if(isAffordable)
+      s"GasOil(amount=$amount, price=$price) - Affordable"
+    else
+      s"GasOil(amount=$amount, price=$price) - Expensive"
   }
 }
