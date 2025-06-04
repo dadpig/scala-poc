@@ -2,7 +2,7 @@ package com.logisticsystem.domain
 
 import com.logisticsystem.business.{GasOil, Weather}
 
-abstract class Transport (val name: String, val distance: Int, val capacity: Int, val price: Double, val gasOil: GasOil, weather: Weather) {
+abstract class Transport (val name: String, val distance: Int, val capacity: Int, val price: Double, val gasOil: GasOil, val weather: Weather) {
 
   
   def displayInfo(): String = {
@@ -11,18 +11,25 @@ abstract class Transport (val name: String, val distance: Int, val capacity: Int
 
   def calculateTransportCost(): Double = {
     val costPerUnit = {
-      //logic to calculate cost per unit based on gasOil price and weather conditions
       if (gasOil.isExpensive) {
         if (weather.isStormy) 1.8 * gasOil.price
-        else if (weather.isWindy) 1.5 * gasOil.price
-        else gasOil.price * 1.2
-        
+        else 1.2 * gasOil.price
       } else {
         if (weather.isStormy) 1.4 * gasOil.price
-        else if (weather.isWindy) gasOil.price * 1.2
         else gasOil.price
       }
     }
-    distance * costPerUnit
+
+    distance * costPerUnit + price
+  }
+
+  def buildProperTransport(): Transport = {
+    if (capacity < 2000) {
+      new Truck(name, distance, capacity, price, gasOil, weather)
+    } else if (capacity < 10000) {
+      new Boat(name, distance, capacity, price, gasOil, weather)
+    } else {
+      new Rail(name, distance, capacity, price, gasOil, weather)
+    }
   }
 }
