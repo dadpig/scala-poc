@@ -32,4 +32,13 @@ abstract class Transport (val name: String, val distance: Int, val capacity: Int
       new Rail(name, distance, capacity, price, gasOil, weather)
     }
   }
+  
+  def copy(name: String = this.name, 
+            distance: Int = this.distance, 
+            capacity: Int = this.capacity, 
+            price: Double = this.price, 
+            gasOil: GasOil = this.gasOil, 
+            weather: Weather = this.weather): Transport = {
+    buildProperTransport()
+  }
 }

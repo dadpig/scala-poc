@@ -2,6 +2,6 @@
 <project version="4">
   <component name="ScalaCompilerConfiguration">
     <option name="separateProdTestSources" value="true" />
-    <profile name="sbt 1" modules="scala-logistic-system,scala-logistic-system.main,scala-logistic-system.test" />
+    <profile name="sbt 1" modules="scala-logistic-system,scala-logistic-system.main,scala-logistic-system.test,scala-logistic-system_2795,scala-logistic-system_2795.main,scala-logistic-system_2795.test" />
   </component>
 </project>
