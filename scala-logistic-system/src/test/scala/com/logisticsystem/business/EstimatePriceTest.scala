@@ -1,6 +1,6 @@
 package com.logisticsystem.business
 
-import com.logisticsystem.domain.{Boat, Truck}
+import com.logisticsystem.domain.{Boat, Rail, Truck}
 import org.scalatest.funsuite.AnyFunSuite
 
 case class EstimatePriceTest() extends AnyFunSuite{
@@ -92,4 +92,44 @@ case class EstimatePriceTest() extends AnyFunSuite{
     assert(boat.calculateTransportCost() == boat.copy(gasOil = affordableGasOil, weather = stormyDay).calculateTransportCost())
 
   }
+
+
+  test("TEST: Estimate price of a Rail in regular weather with affordable gas oil") {
+    val affordableGasOil = GasOil(5000, 2.5)
+    val regularDay = Weather(30, 50)
+
+    val rail: Rail = new Rail("TestRail", 50000, 100000, 2000, affordableGasOil, regularDay)
+    println("TestRail affordable gas: price " + rail.calculateTransportCost())
+    assert(rail.calculateTransportCost() == rail.copy(gasOil = affordableGasOil, weather = regularDay).calculateTransportCost())
+
+  }
+  test("TEST: Estimate price of a Rail in regular weather with not affordable gas oil") {
+    val affordableGasOil = GasOil(5000, 3.5)
+    val regularDay = Weather(30, 50)
+
+    val rail: Rail = new Rail("TestRail", 50000, 100000, 2000, affordableGasOil, regularDay)
+    println("TestRail not affordable gas: price " + rail.calculateTransportCost())
+    assert(rail.calculateTransportCost() == rail.copy(gasOil = affordableGasOil, weather = regularDay).calculateTransportCost())
+
+  }
+
+  test("TEST: Estimate price of a Rail in stormy weather with affordable gas oil") {
+    val affordableGasOil = GasOil(5000, 2.5)
+    val stormyDay = Weather(30, 75)
+
+    val rail: Rail = new Rail("TestRail", 50000, 100000, 2000, affordableGasOil, stormyDay)
+    println("TestRail in stormy day affordable gas: price " + rail.calculateTransportCost())
+    assert(rail.calculateTransportCost() == rail.copy(gasOil = affordableGasOil, weather = stormyDay).calculateTransportCost())
+
+  }
+  test("TEST: Estimate price of a Rail in stormy weather with not affordable gas oil") {
+    val affordableGasOil = GasOil(5000, 3.5)
+    val stormyDay = Weather(30, 75)
+
+    val rail: Rail = new Rail("TestRail", 50000, 100000, 2000, affordableGasOil, stormyDay)
+    println("TestRail in stormy day not affordable gas: price " + rail.calculateTransportCost())
+    assert(rail.calculateTransportCost() == rail.copy(gasOil = affordableGasOil, weather = stormyDay).calculateTransportCost())
+
+  }
+
 }
