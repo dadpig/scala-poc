@@ -29,7 +29,6 @@ def testTreasureMap():Unit = {
   treasure += (1 -> "Go to Island")
   treasure += (2 -> "Find the big X")
   treasure += (3 -> "Dig deeper")
-
   print(treasure)
 }
 
@@ -38,4 +37,23 @@ def testRomanNumberMap():Unit = {
   print(romanNum)
 }
 
+def testForYield():Unit = {
+  val ques = Vector("Who", "What", "When", "Where", "Why")
+  println(ques)
+  val usingYield = for q <- ques yield q.toLowerCase + "?"
+  println(usingYield)
+}
+
+def testFindWithOptional:Unit = {
+  val ques = Vector("Who", "What", "When", "Where", "Why")
+
+  val startsW = ques.find(q => q.startsWith("W") //Some("Who")
+  val hasLen4 = ques.find(q => q.length(4) //Some("What")
+  val startsH = ques.find(q => q.startsWith("H") //None
+  println(startsW)
+  println(hasLen4)
+  println(startsH)
+}
+                        
+  
 
