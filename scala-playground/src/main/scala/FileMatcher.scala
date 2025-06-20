@@ -13,3 +13,9 @@ object FileMatcher:
 
   def filesRegex(query: String) = 
     filesMatching(_.matches(query))
+
+
+FileMatcher.filesEnding(".scala")// return all files ending with '.scala'
+FileMatcher.filesContaining("Match") // return 'FileMatcher.scala'
+
+    
