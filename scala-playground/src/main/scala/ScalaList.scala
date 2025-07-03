@@ -56,4 +56,60 @@ def testFindWithOptional:Unit = {
 }
                         
   
+// List concatenation (:::)
+List(1, 2) ::: List(3, 4, 5) // Result: List(1, 2, 3, 4, 5)
 
+// Divide and Conquer principle - Concatenation
+def append[T](xs: List[T], ys: List[T]): List[T] =
+  xs match {
+    case List() => ys
+    case x :: xs1 => x :: append(xs1, ys)
+  }
+
+// Length
+List(1, 2, 3).length // Result: 3
+
+// Accessing end of a list - Init and Last
+val abcde = List('a', 'b', 'c', 'd', 'e')
+abcde.last // Result: 'e'
+abcde.init // Result: List('a', 'b', 'c', 'd')
+
+// Reversing lists
+abcde.reverse // Result: List('e', 'd', 'c', 'b', 'a')
+
+// Prefixes and Suffixes - Drop, Take, SplitAt
+abcde.take(2) // Result: List('a', 'b')
+abcde.drop(2) // Result: List('c', 'd', 'e')
+abcde.splitAt(2) // Result: (List('a', 'b'), List('c', 'd', 'e'))
+
+// Element selection - Apply and Indices
+abcde(2) // Result: 'c'
+abcde.indices // Result: List(0, 1, 2, 3, 4)
+
+// Zipping lists
+abcde.indices zip abcde // Result: List((0,'a'), (1,'b'), (2,'c'), (3,'d'), (4,'e'))
+
+// Displaying lists - ToString and MkString
+abcde.toString // Result: "List(a, b, c, d, e)"
+abcde.mkString("[", ",", "]") // Result: "[a,b,c,d,e]"
+
+// Merge sort example
+def msort[T](less: (T, T) => Boolean)(xs: List[T]): List[T] = {
+  def merge(xs: List[T], ys: List[T]): List[T] =
+    (xs, ys) match {
+      case (Nil, _) => ys
+      case (_, Nil) => xs
+      case (x :: xs1, y :: ys1) =>
+        if (less(x, y)) x :: merge(xs1, ys)
+        else y :: merge(xs, ys1)
+    }
+  val n = xs.length / 2
+  if (n == 0) xs
+  else {
+    val (ys, zs) = xs splitAt n
+    merge(msort(less)(ys), msort(less)(zs))
+  }
+}
+
+// Sorting with merge sort
+msort((x: Int, y: Int) => x < y)(List(5, 7, 1, 3)) // Result: List(1, 3, 5, 7)
