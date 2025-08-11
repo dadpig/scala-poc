@@ -2,7 +2,6 @@ package lookup
 
 object DPK03_01 {
 
-  //Create a function that perform a lookup in a map for a given key you hould have id, name.
   def lookup(map: Map[Int, String], key: Int): Option[String] = {
     map.get(key)
   }
