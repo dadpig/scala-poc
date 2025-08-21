@@ -1,13 +1,24 @@
-DPK04 Simple Pattern Matcher
+package pattern_matcher
 
-Given the following countries and languages:
+object DPK04 {
 
-Usa -> English
-Brazil -> Portuguese
-Spain -> Spanish
-Italy -> Italian
-France -> French
-Germany -> German
-Create a function that can return the language for a given country. You cannot use a hashmap or dictionary.
+  def matchPattern(country: String): String = {
+    country match {
+      case "Usa" => "English"
+      case "Brazil" => "Portuguese"
+      case "Spain" => "Spanish"
+      case "Italy" => "Italian"
+      case "France" => "French"
+      case "Germany" => "German"
+      case _ => "Unknown country"
+    }
+  }
 
-pattern_matcher("Usa") -> "English"
+  def main(args: Array[String]): Unit = {
+    val countries = List("Usa", "Brazil", "Spain", "Italy", "France", "Germany", "Unknown")
+    countries.foreach { country =>
+      println(s"$country -> ${matchPattern(country)}")
+    }
+  }
+
+}
