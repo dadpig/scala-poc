@@ -1,20 +1,20 @@
 package groupby
 
-object DPK07_02 {
+object DPK07_03 {
 
 
   private def groupBy(list: List[Any], groupSize: Int): Array[Array[Any]] = {
-
     if (list.isEmpty || groupSize <= 0)
       return Array.empty[Array[Any]]
-    val result = scala.collection.mutable.ArrayBuffer[Array[Any]]()
-    var i = 0
-    while (i < list.length) {
-      val end = math.min(i + groupSize, list.length)
-      result += list.slice(i, end).toArray
-      i += groupSize
+
+    def recursiveLoop(remaining: List[Any]): Array[Array[Any]] = {
+      if (remaining.isEmpty) Array.empty[Array[Any]]
+      else {
+        val (group, rest) = remaining.splitAt(groupSize)
+        Array(group.toArray) ++ recursiveLoop(rest)
+      }
     }
-    result.toArray
+    recursiveLoop(list)
   }
 
   def main(args: Array[String]): Unit = {
