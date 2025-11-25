@@ -3,7 +3,7 @@ package tokenizer
 object DPK06_02 {
 
   private def tokenize(input: String, token: String): Array[String] = {
-    var tokens = scala.collection.mutable.ArrayBuffer[String]()
+    val tokens = scala.collection.mutable.ArrayBuffer[String]()
     var currentToken = new StringBuilder
     var i = 0
     while (i < input.length) {
