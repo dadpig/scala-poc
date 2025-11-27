@@ -2,7 +2,7 @@ package pattern_matcher
 
 import scala.annotation.tailrec
 
-object DPK04_04 {
+object DPK04_05 {
 
   val countries = List(
     ("Usa", "English"),
@@ -15,12 +15,11 @@ object DPK04_04 {
 
   def matchPattern(country: String): String = {
 
-    for ((key, value) <- countries) {
-      if (key == country) {
-        return value
-      }
+    val result = countries.foldLeft("Unknown") { (acc, pair) =>
+      val (k, v) = pair
+      if (k == country) v else acc
     }
-    "Unknown"
+    result
   }
 
   def main(args: Array[String]): Unit = {
