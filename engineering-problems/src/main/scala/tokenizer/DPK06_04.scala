@@ -4,7 +4,7 @@ object DPK06_04 {
 
   private def tokenize(input: String, token: String): Array[String] = {
    
-       var tokens = List[String]()
+    var tokens = List[String]()
     var currentToken = new StringBuilder
     var i = 0
     token.filter(_ => {
