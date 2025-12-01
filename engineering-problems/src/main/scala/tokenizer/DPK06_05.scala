@@ -4,7 +4,7 @@ object DPK06_05 {
 
   private def tokenize(input: String, token: String): Array[String] = {
     val result = for {
-      segment <- input.split(java.util.regex.Pattern.quote(token))
+      segment <- input.split(",")
     } yield segment
     result
   }
