@@ -1,18 +1,14 @@
 package lookup
 
-object DPK03_06 {
+object DPK03_07 {
 
   def lookup(map: Map[String, String], key: String): Option[String] = {
-    map.foldLeft(Option.empty[String]) { (acc, pair) =>
-      acc.orElse {
-        val (k, v) = pair
-        if (k == key || v == key) Some(v) else None
-      }
-    }
+    map.get(key).orElse(
+      map.find { case (_, v) => v == key }.map(_._2))
   }
 
   def main(args: Array[String]): Unit = {
-    val sampleMap = Map("John" -> "John@internet.com", "Bob"-> "Bob@internet.com", "Charlie" -> "Charlie@internet.com")
+    val sampleMap = Map("John" -> "John@internet.com", "Bob" -> "Bob@internet.com", "Charlie" -> "Charlie@internet.com")
     val keyToLookup = "John"
     val result = lookup(sampleMap, keyToLookup)
 
@@ -29,5 +25,4 @@ object DPK03_06 {
       case None => println(s"No entry found for value: $keyToLookup")
     }
   }
-
 }
