@@ -2,29 +2,38 @@ package oop
 
 class Person03 (private val name: String, val age: Int, var friends: List[Person03]) {
 
- 
+
   private def getName: String = name
   private def getAge: Int = age
 
   def personWithMostFriends(people: List[Person03]): Option[Person03] = {
-    people match {
-      case Nil => None
-      case _ => Some(people.maxBy(_.friends.size))
+    var moreFriendlyPerson = people.head
+    for (person <- people) {
+      if (person.friends.size > moreFriendlyPerson.friends.size) {
+        moreFriendlyPerson = person
+      }
     }
+    Some(moreFriendlyPerson)
   }
 
   def personWithLessFriends(people: List[Person03]): Option[Person03] = {
-    people match {
-      case Nil => None
-      case _ => Some(people.minBy(_.friends.size))
+    var lessFriendlyPerson = people.head
+    for (person <- people) {
+      if (person.friends.size < lessFriendlyPerson.friends.size) {
+        lessFriendlyPerson = person
+      }
     }
+    Some(lessFriendlyPerson)
   }
 
   def oldestFriend(): Option[Person03] = {
-    friends match {
-      case Nil => None
-      case _ => Some(friends.maxBy(_.getAge))
+    var oldestFriendlyPerson = friends.head
+    for (friend <- friends) {
+      if (friend.age > oldestFriendlyPerson.age) {
+        oldestFriendlyPerson = friend
+      }
     }
+    Some(oldestFriendlyPerson)
   }
 
   def addFriend(friend: Person03): Unit = {
@@ -50,7 +59,7 @@ class Person03 (private val name: String, val age: Int, var friends: List[Person
   override def toString: String = {
     s"Person03(name=$getName, age=$getAge, friends=${listFriendsNames()})"
   }
-  
+
 }
 object Person03App {
   def main(args: Array[String]): Unit = {

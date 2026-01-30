@@ -44,27 +44,34 @@ class Person02 (private val name: String, val age: Int, var friends: List[Person
   }
 
 }
+
 object Person02App {
   def main(args: Array[String]): Unit = {
     val person = new Person02("John", 30, List())
     println(person)
     person.addFriendByName("Paul")
     println(person)
-    person.addFriendByName("George")
+    person.addFriend(new Person02("George", 28, List()))
     println(person)
-    person.addFriendByName("Ringo")
+    person.removeFriend("Paul")
     println(person)
-    person.addFriendByName("Paul")
-    println(person)
-    person.removeFriend("George")
-    println(person)
-    person.addFriend(new Person02("Yoko", 28, List()))
-    println(person)
-    person.addFriend(new Person02("Ringo", 32, List()))
-    println(person)
-    println(person.oldestFriend());
-    person.addFriend(new Person02("Bingo", 32, List()))
-    println(person.oldestFriend());
 
+    val friend1 = new Person02("Alice", 25, List())
+    val friend2 = new Person02("Bob", 27, List())
+    val friend3 = new Person02("Charlie", 22, List())
+
+    val people = List(
+      new Person02("Dave", 30, List(friend1, friend2)),
+      new Person02("Eve", 35, List(friend1)),
+      new Person02("Frank", 28, List(friend1, friend2, friend3))
+    )
+
+    println(s"Person with most friends: ${person.personWithMostFriends(people)}")
+    println(s"Person with less friends: ${person.personWithLessFriends(people)}")
+
+    person.friends = List(friend1, friend2, friend3)
+    println(s"Oldest friend: ${person.oldestFriend()}")
   }
 }
+
+
