@@ -1,0 +1,16 @@
+# macOS system files
+.DS_Store
+
+# IntelliJ IDEA
+.idea/
+
+# Build output
+target/
+
+# Giter8 templates
+.g8/
+
+# Scala/sbt specific
+*.class
+*.log
+project/target/
